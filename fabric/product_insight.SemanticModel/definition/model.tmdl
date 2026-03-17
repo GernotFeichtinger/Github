@@ -1,0 +1,33 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["DirectLake - Fabcon_database"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DirectLakeOnOneLakeInWeb"]
+
+ref table Product
+ref table Address
+ref table ProductModel
+ref table SalesOrderDetail
+ref table ProductCategory
+ref table Customer
+ref table SalesOrderHeader
+ref table ProductModelProductDescription
+ref table ErrorLog
+ref table ProductDescription
+ref table BuildVersion
+ref table CustomerAddress
+ref table PurchaseOrders
+ref table Warehouse
+ref table PurchaseOrderLines
+ref table InventoryTransactions
+ref table SupplierPerformance
+ref table Suppliers
+

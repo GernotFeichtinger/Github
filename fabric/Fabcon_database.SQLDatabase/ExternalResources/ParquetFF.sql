@@ -1,0 +1,8 @@
+CREATE EXTERNAL FILE FORMAT [ParquetFF]
+    WITH (
+    FORMAT_TYPE = PARQUET
+    );
+
+
+GO
+

@@ -1,0 +1,60 @@
+{
+  "runtime": "PYTHON",
+  "functionsMetadata": [
+    {
+      "name": "write_emp_info_on_product_Review",
+      "scriptFile": "function_app.py",
+      "bindings": [
+        {
+          "name": "req",
+          "type": "HttpTrigger",
+          "direction": "In",
+          "authLevel": "Anonymous",
+          "methods": [
+            "POST"
+          ],
+          "route": ""
+        },
+        {
+          "name": "sqlDB",
+          "type": "FabricItem",
+          "direction": "In",
+          "alias": "Fabcondatabase",
+          "subType": "FabricSqlConnection",
+          "itemType": null,
+          "audienceType": null
+        }
+      ],
+      "fabricProperties": {
+        "fabricMetadataSchemaVersion": "1.1.0",
+        "fabricFunctionReturnType": "str",
+        "fabricFunctionParameters": [
+          {
+            "name": "productid",
+            "dataType": "int",
+            "hasDefaultValue": false,
+            "defaultValue": null
+          },
+          {
+            "name": "ReviewID",
+            "dataType": "int",
+            "hasDefaultValue": false,
+            "defaultValue": null
+          },
+          {
+            "name": "EmployeeID",
+            "dataType": "int",
+            "hasDefaultValue": false,
+            "defaultValue": null
+          },
+          {
+            "name": "employeeComments",
+            "dataType": "str",
+            "hasDefaultValue": false,
+            "defaultValue": null
+          }
+        ]
+      }
+    }
+  ]
+}
